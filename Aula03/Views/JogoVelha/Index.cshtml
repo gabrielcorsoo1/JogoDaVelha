@@ -1,0 +1,28 @@
+﻿@model Aula03.Controllers.JogoVelhaController;
+﻿
+<form id="JogoVelhaForm" method="post" action="/JogoVelha/Index">
+    <table>
+        <tr>
+            <td><input type="text" name="A00" required /></td>
+            <td><input type="text" name="A01" required /></td>
+            <td><input type="text" name="A02" required /></td>
+        </tr>
+        <tr>
+            <td><input type="text" name="A10" required /></td>
+            <td><input type="text" name="A11" required /></td>
+            <td><input type="text" name="A12" required /></td>
+        </tr>
+        <tr>
+            <td><input type="text" name="A20" required /></td>
+            <td><input type="text" name="A21" required /></td>
+            <td><input type="text" name="A22" required /></td>
+        </tr>
+    </table>
+
+    <button type="submit">Terminar</button>
+</form>
+
+@if (ViewData["Vencedor"] != null)
+{
+    <h3>@ViewData["Vencedor"]</h3>
+}
